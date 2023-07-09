@@ -12,9 +12,13 @@ function contar(){
         let f = Number(fim.value)
         let p = Number(passo.value)
 
-        for(let c = i; c <= f; += p) {
+        for(let c = i; c <= f; c += p) {
+            res.innerHTML += ` ${c} \u{1F449}`
+        }      
+    } else {
+        for(let c = i; c >= f; c -= p) {
             res.innerHTML += ` ${c} \u{1F449}`
         }
-        res.innerHTML += ` ${C} \u{1F3C1}`
-    }
+        res.innerHTML += ` ${c} \u{1F3C1}`
+    } 
 }
